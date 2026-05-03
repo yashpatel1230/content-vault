@@ -1,0 +1,74 @@
+# Researcher seed accounts (TEMPLATE)
+
+Curated list of high-signal creators to scan for content ideas. Edit to match YOUR network and taste.
+
+## X (Twitter)
+
+API user IDs cached so we skip per-run lookups. Run the resolution curl below to get IDs.
+
+| Handle | User ID | Why track |
+|---|---|---|
+| `@romanbuildsaas` | `1893653481858433024` | (example · metrics-first build-in-public · raw revenue + DAU posts) |
+| `@MichLieben` | `512156315` | (example · story + self-roast register) |
+| `@itsalexvacca` | `859850213015597056` | (example · operator-with-receipts) |
+| `<your handle>` | `<your ID>` | <add your own seed accounts here> |
+
+Add new handles by running once with the X API user-by-username lookup
+to get the numeric ID, then commit it back here.
+
+```bash
+source ./.env
+curl -s "https://api.twitter.com/2/users/by/username/<handle>" \
+  -H "Authorization: Bearer ${X_BEARER_TOKEN}"
+```
+
+(Auth uses `<YOUR_X_BEARER_TOKEN>` set as `X_BEARER_TOKEN` in `./.env`.)
+
+## LinkedIn
+
+Profile IDs are Unipile-style `ACoAA...` strings. Resolve via Unipile profile-search on first lookup, cache here.
+
+| Name | LinkedIn URL | Profile ID (cache) | Why track |
+|---|---|---|---|
+| <example name> | linkedin.com/in/example | TBD | (example · adjust to your taste) |
+| <example name> | linkedin.com/in/example-2 | TBD | (example · adjust to your taste) |
+| <example name> | linkedin.com/in/example-3 | TBD | (example · adjust to your taste) |
+| You (your own profile) | linkedin.com/in/your-handle | `<YOUR_LINKEDIN_PROFILE_ID>` | Your own feed (for "what people respond to me about") |
+
+Resolve a profile ID:
+
+```bash
+source ./.env
+curl -s "https://${UNIPILE_DSN}/api/v1/users?account_id=${UNIPILE_ACCOUNT_ID}&keyword=<name>&limit=5" \
+  -H "X-API-KEY: ${UNIPILE_API_KEY}"
+```
+
+(Auth uses `<YOUR_UNIPILE_DSN>`, `<YOUR_UNIPILE_API_KEY>`, `<YOUR_UNIPILE_ACCOUNT_ID>` set in `./.env`.)
+
+## Notion data sources
+
+| Source | Data source ID | Purpose |
+|---|---|---|
+| Content DB | `<YOUR_NOTION_CONTENT_DB_ID>` | Your published rows (performance scan) |
+| Human Notes / Interview DB | `<YOUR_NOTION_HUMAN_NOTES_DB_ID>` | Customer-interview transcripts (customer scan) |
+
+Customer-scan filter: include rows matching your interview categories. Edit the filter list in researcher/SKILL.md to match your DB schema.
+
+## Topic seeds (for keyword scans)
+
+Default seed set — replace with topics in your space:
+
+- <topic 1>
+- <topic 2>
+- <topic 3>
+- <topic 4>
+- <topic 5>
+
+## Banned signals
+
+Skip these even if engagement looks high:
+- Generic motivational / hustle posts
+- AI-slop posts (long em-dashed reflective threads from anonymous accounts)
+- Crypto / financial advice (unless that's your niche)
+- Non-English (unless your audience is multilingual)
+- Posts > 14 days old (lose freshness)

@@ -1,0 +1,111 @@
+# corpus.md.example
+
+This file is a TEMPLATE. Rename to `corpus.md` and fill it with your
+top 20 LinkedIn posts (sorted by reactions, descending) so the
+linkedin-copywriter skill drafts in YOUR voice, not a generic one.
+
+The top 5 are the strongest voice anchors. The agent re-reads this
+file before every draft to ground hook choice, body shape, and
+vocabulary in your real writing.
+
+## How to populate
+
+Two paths:
+
+**Path A · Connected to LinkedIn via Unipile or your platform:**
+
+Ask Claude: "Read my last 20 LinkedIn posts via the LinkedIn API,
+sort by reactions, and overwrite this file." If you have Unipile
+configured, the curl block in `SKILL.md` (bottom) does the pull. The
+agent then re-sorts and rewrites this file.
+
+**Path B · Manual:**
+
+Copy-paste your top 20 posts below using the format shown. Sort by
+reaction count, descending. Preserve line breaks exactly as they
+appear on LinkedIn · they're part of your rhythm.
+
+## Refresh cadence
+
+Quarterly. Voice drifts as you publish more, and stale corpora pull
+the agent toward where you used to be, not where you are now.
+
+## Format
+
+Each post block:
+
+---
+
+### Post NN · <ReactionCount> reactions · <YYYY-MM-DD>
+
+[full post text, line breaks preserved]
+
+---
+
+## Example block (delete before using)
+
+### Post 01 · 188 reactions · 2026-04-15
+
+Framer and Webflow are in massive trouble.
+
+I just replaced my Framer site in a couple of vibe coding sessions.
+
+And I'm still a bit mindblown.
+
+I'm not a web designer.
+Yet this is what I shipped end to end.
+
+What I built with Claude Code + Cursor (Gemini 3 Pro) + Aura.build:
+
+- Fully custom-designed website
+- Google Analytics + LinkedIn Insight Tag
+- Proper, compliant cookie handling
+- Lightweight Notion CMS for lead magnets
+- Automations that push opt-ins directly into Loops
+- Clean, well-designed legal pages
+
+This now saves me $480 per year in website costs.
+
+To all the real website designers out there, roast it in the
+comments :)
+
+---
+
+### Post 02 · 117 reactions · 2026-04-08
+
+[... your real post text here ...]
+
+---
+
+### Post 03 · 112 reactions · 2026-04-01
+
+[... your real post text here ...]
+
+---
+
+### Post 04 · 97 reactions · 2026-03-25
+
+[... your real post text here ...]
+
+---
+
+### Post 05 · 69 reactions · 2026-03-18
+
+[... your real post text here ...]
+
+---
+
+[... continue numbering through Post 20 ...]
+
+---
+
+## Tips for picking the 20
+
+- Sort by reaction count, not impressions. Reactions correlate with
+  voice resonance; impressions correlate with timing and luck.
+- Include posts across formats (text-only, with image, with video,
+  with carousel). The agent learns shape, not just words.
+- Don't filter out "weird" posts that did well · those are usually
+  your strongest voice fingerprints.
+- Drop pure repost / share-with-comment posts. They don't reflect
+  your original writing.

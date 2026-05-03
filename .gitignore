@@ -1,0 +1,40 @@
+# Secrets
+.env
+.env.local
+*.key
+
+# Per-user populated corpora (users fill these in locally)
+skills/*/corpus.md
+skills/*/seed-accounts.md
+skills/*/reference-corpus.md
+
+# Don't ignore the .example templates
+!skills/*/corpus.md.example
+!skills/*/seed-accounts.md.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python (video-use)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.lock
+
+# Node (if anyone adds JS tooling)
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+dist/
+build/
+out/

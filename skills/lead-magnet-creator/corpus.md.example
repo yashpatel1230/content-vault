@@ -1,0 +1,138 @@
+# corpus.md.example
+
+This is the voice corpus for `lead-magnet-creator`. Rename to `corpus.md`
+and fill with 2-4 anchor lead magnets in your brand voice so the skill
+produces magnets that sound like YOU.
+
+The cover and the close borrow your `linkedin-copywriter` corpus voice
+(AUTHOR voice). The body uses an operator-playbook register (OPERATOR
+voice) anchored on the magnets you list below.
+
+---
+
+## How to populate
+
+Two paths:
+
+**Path A · You have an existing vault.** Link or paste 2-4 of your
+strongest lead magnets here. Cover headlines, opening paragraphs, closing
+CTAs, the rhythm of a body section. The skill learns voice + format taste
+from these.
+
+**Path B · You're starting from scratch.** Skip this file for the first
+run. The skill will use the generic OPERATOR-voice defaults from
+`SKILL.md`. Once you've shipped 2-3 magnets, fill this file with your own
+voice anchors so future magnets compound.
+
+---
+
+## Anchor format
+
+Use this template, one block per magnet. 2-4 anchors is the sweet spot.
+More than 6 dilutes the signal.
+
+---
+
+### Anchor NN · <Magnet Title> · <Format>
+
+**Cover headline:** [the two-line hero pattern verbatim]
+
+**Opening paragraph:** [verbatim · the first 4-8 sentences the reader
+sees after the cover. This is the empathy / why-listen-to-me beat.]
+
+**One body section header:** [verbatim · pick the strongest "outcome
+promise" header from the magnet. Pattern: `[Verb] your [thing] into a
+[desirable outcome]` or `[Outcome] + [mechanism]`.]
+
+**One body bullet block:** [verbatim · a 3-5 line bullet block that
+shows your bullet rhythm, the symbols you use (`-`, `→`, `•`), and the
+density per bullet.]
+
+**Closing CTA:** [verbatim · the last 2-4 lines including the Cal link
+and email.]
+
+**Format used:** Notion / Google Doc / PDF / Sheet / Skills repo /
+GitHub starter / GPT / Web tool / Video / Vault bundle.
+
+**Why this magnet works:** [1-2 sentences. The structural move that
+made it land · empathy opener, the verbatim prompt, the two-tier
+framing, the small-numbers list.]
+
+---
+
+## Voice rules to extract from your anchors
+
+Once you have 2-4 anchors filled in, write a short list at the bottom of
+this file naming the patterns the skill should reuse. Examples to look
+for:
+
+- Outcome-promise section headers vs feature-label headers
+- Empathy-then-receipts opener (pain → timeline → why-listen-to-me →
+  payoff)
+- Stats blocks formatted as ranges with a "not exact science" disclaimer
+- Two-tier framings ("safe option" + "stronger option, recommended")
+- Step-by-step setup with `Step N: [outcome]` headers, screenshots, and
+  one "where most people mess up" line per step
+- Verbatim ChatGPT system prompts on a dedicated page (radical
+  generosity)
+- Closing CTA pattern: `Stuck? [book / hit me up] :)` then Cal link then
+  email
+- Self-aware honesty lines ("nobody cares about your hospitality job at
+  17", "I don't have a world-class personal brand", "let's be honest")
+- Rule of small numbers: 2 pillars, 3 things, 5 guides. Never 7. Never
+  10.
+- Definition-then-correction openers ("Your LinkedIn profile is not a
+  CV. It's a landing page.")
+
+The goal of this file is **a reader could read the anchors and write a
+new magnet that feels like you wrote it.** If the anchors don't pass that
+test, swap them.
+
+---
+
+## Slop scrub (cross-skill, applies regardless of corpus state)
+
+Run before report-done on any drafted magnet. Even with no anchors, the
+slop scrub still runs.
+
+**Punctuation:**
+- No em dash (`—`). Hard ban. Replace with `.`, `,`, `:`, `()`, or `·`.
+- No curly quotes. Straight only.
+- No ellipsis (`…`). Use `...` if used at all.
+- No non-breaking spaces, no en dashes used as ranges in prose.
+
+**Banned phrases / words** (mirror your `linkedin-copywriter` blacklist):
+delve · dive into · embark · unlock · unleash · harness · elevate ·
+transform · revolutionize · foster · navigate · journey · landscape ·
+realm · ecosystem · tapestry · paradigm · pivotal · crucial · vital ·
+essential · meticulous · leverage · utilize · optimize · streamline ·
+empower · amplify · spearhead · resonate · illuminate · shed light ·
+beacon · testament · treasure trove · symphony · notably · arguably ·
+indeed · in today's fast-paced world · at its core · it's worth noting ·
+a testament to · game changer · move the needle · cutting-edge ·
+state-of-the-art · seamless · world-class · scalable · robust ·
+powerful · innovative · take a moment to · trust the process.
+
+Fixes: "use" not "leverage", "help" not "empower", "strong" not "robust",
+"big" not "transformative", "show" not "underscore", "many parts" not
+"multifaceted".
+
+**Structural slop:**
+- No TL;DR / Key takeaways / In summary headers. The magnet is the
+  takeaway.
+- Max one negation pivot per magnet ("It's not X. It's Y.").
+- No throat-clearing transitions: Furthermore · Moreover · Additionally
+  · That said · Importantly · Ultimately · Subsequently.
+- No bold/italics fake formatting via Unicode characters.
+- No keycap emoji as numbered headers (1️⃣ 2️⃣ 3️⃣). Use plain `1)` or
+  `Step 1`.
+- No symmetric paragraphs (every paragraph the same length). Real
+  paragraphs are uneven.
+
+---
+
+## Refresh
+
+Re-read this file before drafting any new magnet. If a new magnet ships
+that earns big engagement, lift its strongest section openers into a
+new anchor and refresh this file. Quarterly cadence is fine.
