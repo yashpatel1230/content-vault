@@ -22,6 +22,15 @@ Thumbs.db
 *.swp
 *~
 
+# youtube-publisher: OAuth secrets + per-channel state (never commit these)
+**/client_secrets.json
+**/token.json
+**/uploaded.json
+**/finalize-state.json
+
+# youtube-description: generated transcripts
+skills/youtube-description/transcripts/
+
 # Python (video-use)
 __pycache__/
 *.py[cod]

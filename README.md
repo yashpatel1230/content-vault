@@ -1,13 +1,14 @@
 # content-vault
 
-10 Claude Code skills + a Notion template. Same setup we use to run our content.
+14 Claude Code skills + a Notion template. Same setup we use to run our content.
 
 Free. MIT. Fork it.
 
 ```
-linkedin-copywriter   x-copywriter   youtube-script   long-form
-lead-magnet-creator   repurpose      researcher
-graphics-designer     launch-video   video-use
+researcher            repurpose             lead-magnet-creator
+linkedin-copywriter   x-copywriter          long-form              newsletter-writer
+youtube-script        youtube-description   youtube-thumbnail      youtube-publisher
+graphics-designer     launch-video          video-use
 ```
 
 ## Two ways to run this
@@ -61,6 +62,19 @@ export X_BEARER_TOKEN=...
 
 Done. Skills are personalized.
 
+### Video + YouTube skills (optional)
+
+Only if you use them. Each has a `## SETUP` block in its `SKILL.md`.
+
+```bash
+export ELEVENLABS_API_KEY=...   # youtube-description (transcripts), video-use
+pip install rembg               # youtube-thumbnail (face cutouts)
+```
+
+`youtube-publisher` talks to your own channel, so it needs your Google
+Cloud project + a YouTube Data API OAuth client (`client_secrets.json`).
+Walkthrough is in the skill.
+
 ## What's in the vault
 
 **linkedin-copywriter.** Drafts LinkedIn posts in your voice. Hook frameworks, body shapes, CTA patterns, AI-slop blacklist.
@@ -69,7 +83,15 @@ Done. Skills are personalized.
 
 **youtube-script.** Spoken scripts for YouTube longs, shorts, talking-head clips. Timed beats with B-roll cues.
 
-**long-form.** Newsletter, blog, Substack. Outline first, prose second.
+**youtube-description.** Transcribes a finished cut (ElevenLabs Scribe), writes a 2-sentence description, your fixed CTA, and chapter timestamps.
+
+**youtube-thumbnail.** Two-face interview/podcast thumbnails. rembg cutouts, one highlight word, 1280×720 dark + light. Encodes verified 2026 CTR research.
+
+**youtube-publisher.** Uploads a video or a whole numbered series via the YouTube Data API. Titles, descriptions, thumbnails, ordered playlist. Resumable, idempotent.
+
+**long-form.** Newsletter issue, blog, Substack. Outline first, prose second.
+
+**newsletter-writer.** Lifecycle + onboarding emails and broadcasts. Same voice as your posts, rendered to your email template, optional push to Resend.
 
 **lead-magnet-creator.** Builds free assets in 10 formats. Notion, PDF, Sheet, GitHub starter, GPT, web tool, video. The skill that built this vault.
 
