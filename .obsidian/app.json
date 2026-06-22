@@ -1,0 +1,7 @@
+{
+  "attachmentFolderPath": "content/assets",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "content/posts",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true
+}

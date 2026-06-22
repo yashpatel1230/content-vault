@@ -1,0 +1,74 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("content/posts")
+properties:
+  note.status:
+    displayName: Status
+  note.format:
+    displayName: Format
+  note.channel:
+    displayName: Channel
+  note.pillar:
+    displayName: Pillar
+  note.publish:
+    displayName: Publish
+  note.author:
+    displayName: Author
+  file.name:
+    displayName: Title
+views:
+  - type: kanban
+    name: Board
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - format
+      - channel
+      - pillar
+      - publish
+    cardTitleProperty: file.name
+    boardColumns:
+      - Idea
+      - Drafting
+      - Review
+      - Published
+      - Backlog
+  - type: table
+    name: All
+    order:
+      - file.name
+      - status
+      - format
+      - channel
+      - pillar
+      - publish
+    sort:
+      - property: publish
+        direction: DESC
+  - type: table
+    name: Needs attention
+    filters:
+      or:
+        - pillar.isEmpty()
+        - channel.isEmpty()
+        - and:
+            - status == "Published"
+            - publish.isEmpty()
+    order:
+      - file.name
+      - status
+      - pillar
+      - channel
+      - publish
+  - type: cards
+    name: By Channel
+    groupBy:
+      property: channel
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - format
+      - publish

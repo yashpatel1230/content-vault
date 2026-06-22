@@ -47,3 +47,10 @@ npm-debug.log*
 dist/
 build/
 out/
+
+# Obsidian: ship the shared vault config, ignore per-user/volatile state
+.obsidian/workspace*
+.obsidian/cache
+
+# qmd local search index (per-machine; rebuilt by scripts/qmd-setup.sh)
+.qmd/

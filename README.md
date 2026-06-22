@@ -1,6 +1,6 @@
 # content-vault
 
-14 Claude Code skills + a Notion template. Same setup we use to run our content.
+14 Claude Code skills + a pre-configured Obsidian vault. Same setup we use to run our content.
 
 Free. MIT. Fork it.
 
@@ -21,6 +21,10 @@ oxygen-agent.com
 ```bash
 git clone https://github.com/timscheuerai/content-vault.git ~/.claude/skills/content-vault
 ```
+
+Then **open that folder in Obsidian** — it ships a pre-configured vault (Kanban board, graph,
+backlinks, search; no plugin setup). That's where your content lives and is tracked. See
+[The Obsidian side](#the-obsidian-side).
 
 Then in Claude Code:
 
@@ -105,13 +109,21 @@ Walkthrough is in the skill.
 
 **video-use.** Edit any video by chat. Cuts on word boundaries, grades, burns subtitles. Vendored from [browser-use/video-use](https://github.com/browser-use/video-use).
 
-## The Notion side
+## The Obsidian side
 
-Skills produce content. The Notion DB tracks it.
+Skills produce content. Your **Obsidian vault** tracks it — no external tool, no sync, every piece
+a markdown file you own.
 
-Schema: Title, Status, Pillar, Format, Channel, Author, Publish Date, Drive Assets.
+Open this folder in Obsidian (it ships pre-configured) and `content/Content.base` gives you a
+**Kanban board** grouped by status (Idea → Drafting → Review → Published → Backlog), plus table and
+card views. It's a native Obsidian [Base](https://help.obsidian.md/bases) — no community plugin
+needed. Same schema the Notion DB had, now as frontmatter on files you own:
 
-Walkthrough on the [Notion landing page](https://www.notion.so/3552c8bff8c181548699e4e806ccaccc).
+`title · status · pillar · format · channel · author · publish · drive`
+
+New drafts land in `content/posts/`. Want fast semantic + keyword search over your whole back
+catalogue (and for agents, via `mcp__qmd__*`)? Run `./scripts/qmd-setup.sh` once, then
+`qmd query "..."`.
 
 ## Need help?
 
