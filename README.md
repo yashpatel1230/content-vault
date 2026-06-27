@@ -125,6 +125,33 @@ New drafts land in `content/posts/`. Want fast semantic + keyword search over yo
 catalogue (and for agents, via `mcp__qmd__*`)? Run `./scripts/qmd-setup.sh` once, then
 `qmd query "..."`.
 
+## The content graph (your ideas compound)
+
+Tags and pillars slice your posts. They don't connect them. So the vault
+also ships a **knowledge-graph layer** that mirrors the LLM-wiki pattern
+onto your content:
+
+```
+content/concepts/   one note per durable idea (your thesis, in pieces)
+content/entities/   recurring people, customers, competitors
+content/mocs/        narrative arcs that thread posts into a story
+```
+
+Each concept note lists the posts that express it. Obsidian's backlinks
+make that bidirectional automatically, so every post shows its concepts in
+the backlinks pane without you editing the post. Open the graph view and
+watch it thicken.
+
+The point is the loop: the writer skills pull the relevant concept as
+grounding **before** you draft (so you build on your sharpest prior
+framing instead of a blank page) and deposit new ideas back **after** (so
+the canon grows underneath you). `/researcher` gets a fourth mode that
+mines the graph for the next unwritten beat. Start empty, publish, and in
+a few weeks the graph *is* your content thesis.
+
+How it works + templates: `content/CONTENT-WIKI.md`. The vault ships one
+worked `example-*` note per type to copy.
+
 ## Need help?
 
 Built by us at Oxygen. Stuck? hello@oxygen-agent.com

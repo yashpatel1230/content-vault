@@ -299,6 +299,24 @@ if you want changes." Just the drafts + metadata.
 
 ---
 
+## Content graph (close the loop)
+
+X posts written here land in `content/posts/` and feed the content
+knowledge graph (`content/CONTENT-WIKI.md`). Many X posts repurpose a
+longer original that is already a node.
+
+**Before drafting:** open the relevant note in `content/concepts/` and
+build on its canonical lines instead of starting blank.
+
+**After the post is saved:** add it to the concept's `## Appears in`
+(mark `(X)` in the angle), create a note if the idea is genuinely new,
+update any `content/entities/` or `content/mocs/` it touches, and append
+to `content/log.md`. Edges live in the concept notes (Obsidian backlinks
+are automatic), so don't edit the post body. Pure repurposes of a post
+already in the graph can skip this.
+
+---
+
 ## Editing mode
 
 If the user pastes a draft and asks to "make it sound less LinkedIn"

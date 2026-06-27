@@ -59,11 +59,29 @@ Best for: sharp pain-point posts, customer-quoted content, lead-
 magnet topics that solve real problems. The most original mode
 because it draws on private signal nobody else has.
 
-### 4. Hybrid (recommended for weekly runs)
+### 4. Concept scan · "extend your own canon"
 
-Run all three. Dedupe. Output a balanced backlog: 4 trend ideas, 3
-performance double-downs, 3 customer-pain ideas (or whatever ratio
-makes sense given recency).
+Read the content knowledge graph in `content/concepts/` and
+`content/mocs/` (see `content/CONTENT-WIKI.md`). Two moves:
+- **Extend a thread.** For a high-value concept or an open MOC arc,
+  propose the next beat: the unwritten angle, the new proof point, the
+  counter-take, the deeper dive. Ground it in the concept's existing
+  canonical lines so the new post compounds the old ones.
+- **Find the gaps.** Surface thin concepts (low `appears_in`) that
+  deserve more, and recurring ideas in recent posts that have no concept
+  note yet (candidates for a new node).
+
+Best for: making content compound instead of restart. The most on-brand
+mode because it builds on your own canon, not the feed. (If the graph is
+still empty, skip this mode until you've published a few posts.)
+
+### 5. Hybrid (recommended for weekly runs)
+
+Run all four. Dedupe. Output a balanced backlog: 3 trend ideas, 3
+performance double-downs, 2 customer-pain ideas, 2 concept extensions
+(or whatever ratio makes sense given recency). When you create an idea
+that extends a concept, note `Extends: [[concept-slug]]` on it so the
+link exists from the Idea stage. See `content/CONTENT-WIKI.md`.
 
 ## Workflow
 

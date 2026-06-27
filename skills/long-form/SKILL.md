@@ -235,6 +235,18 @@ Suggest next: open the Notion row to review, then flip Status to
   use exact quotes only when the source is non-NDA · paraphrase
   otherwise.
 
+## Content graph (close the loop)
+
+This skill writes to `content/posts/`, which feeds the content knowledge
+graph (`content/CONTENT-WIKI.md`). Before drafting, pull the relevant note
+from `content/concepts/` and build on its canonical lines instead of
+starting blank. After the piece is saved, deposit its 1-3 core ideas back:
+add the post to each concept's `## Appears in` (create a note if the idea
+is genuinely new), update any `content/entities/` or `content/mocs/` it
+touches, and append to `content/log.md`. Edges live in the concept notes
+(Obsidian backlinks are automatic), so don't edit the post body to add
+them.
+
 ## See also
 
 - Brand reference: `<YOUR_BRAND_DOC>` · voice rules + skill checklist

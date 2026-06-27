@@ -422,6 +422,30 @@ if you want changes." Just the draft + the metadata block.
 
 ---
 
+## Content graph (close the loop)
+
+This skill writes to `content/posts/`, which feeds the content knowledge
+graph (`content/CONTENT-WIKI.md`).
+
+**Before drafting:** find the durable idea this post expresses and open
+its note in `content/concepts/`. Reuse its canonical lines and proof and
+push the idea one beat further, instead of starting from a blank page.
+This is what makes content compound: you remix your own canon, not the
+feed.
+
+**After the draft is saved:** for the post's 1-3 core ideas, add the post
+to each concept's `## Appears in` (`- [[<post-slug>]] · <short angle>`),
+lift any sharp new line into `## Canonical lines`, and bump `appears_in`
++ `updated`. If an idea has no concept note yet and is genuinely durable,
+create one from the template in `CONTENT-WIKI.md` and list it in
+`content/index.md`. Update any `content/entities/` or `content/mocs/` the
+post touches, and append a line to `content/log.md`.
+
+Edges live in the concept notes; Obsidian backlinks make them
+bidirectional, so you do **not** edit the post body to add them.
+
+---
+
 ## Editing mode
 
 If the user pastes an existing draft and asks to "fix the slop" or

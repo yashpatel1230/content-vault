@@ -264,6 +264,18 @@ Before declaring done:
 
 ---
 
+## Content graph (close the loop)
+
+When an issue is saved as a `content/posts/` file, it feeds the content
+knowledge graph (`content/CONTENT-WIKI.md`). Before drafting, pull the
+relevant note from `content/concepts/` and build on its canonical lines
+instead of starting blank. After the issue ships, deposit its 1-3 core
+ideas back: add the post to each concept's `## Appears in` (create a note
+if the idea is genuinely new), update any `content/entities/` or
+`content/mocs/` it touches, and append to `content/log.md`. Edges live in
+the concept notes (Obsidian backlinks are automatic), so don't edit the
+post body to add them.
+
 ## Related
 
 - Voice corpus (shared with /linkedin-copywriter):
